@@ -19,12 +19,10 @@
   },
   "main": "./dist/chat.umd.js",
   "module": "./dist/chat.es.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/chat.es.js",
-      "require": "./dist/chat.umd.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/chat.umd.js"
     },
     "./style.css": {
       "import": "./dist/style.css",
@@ -35,6 +33,7 @@
       "require": "./*"
     }
   },
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "@vueuse/core": "^10.11.0",
     "highlight.js": "catalog:frontend",
